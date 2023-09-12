@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
-import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -16,7 +15,7 @@ const Contact = () => {
   const emailValidation = () => {
     return String(email)
       .toLocaleLowerCase()
-      .match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/);
+      .match(/^[\w-.]+@([\w-]+\.)+[\w-]{2,4}$/);
   };
   // ========== Email Validation end here ================
 
