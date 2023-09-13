@@ -8,6 +8,7 @@ const ProjectsCard = ({ title, des, src, gitLink, websiteLink }) => {
       <div className="w-full h-[80%] overflow-hidden rounded-lg">
         <img
           className="w-full h-60 object-cover group-hover:scale-110 duration-300 cursor-pointer"
+          onClick={() => window.open(`${websiteLink}`, "_blank", "noreferrer")}
           src={src}
           alt="src"
         />
